@@ -6,7 +6,7 @@ const Context = ({children}) => {
     const[t,setT]= useState("light");
     const handleToggle=()=>{
         setT((prev)=>
-           ( prev === "light"? "darck":"light")
+           ( prev === "light"? "dack":"light")
         )
     }
 
