@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           {/* Image */}
           <div className="w-full md:w-1/2">
             <img
-              src="/path-to-your-image.jpg"
+              src="/img16.jpg"
               alt="About Me"
               className="rounded-lg shadow-lg"
             />
@@ -20,10 +21,9 @@ const About = () => {
           {/* Text */}
           <div className="w-full md:w-1/2 text-gray-700">
             <p className="mb-4 text-lg leading-relaxed">
-              Hello! I’m [Your Name], a passionate artist with expertise in
-              [specific art type, e.g., painting, digital art, sculpture]. My
-              journey in the world of art started [add brief backstory or years
-              of experience].
+              Hello! I’m Ashwini, a passionate artist with expertise in
+             painting, digital art, sculpture. My
+              journey in the world of art started...
             </p>
             <p className="mb-4 text-lg leading-relaxed">
               My work is inspired by [mention inspirations, e.g., nature,
@@ -38,11 +38,12 @@ const About = () => {
               the world more beautiful, one creation at a time!
             </p>
             <a
-              href="#portfolio"
+              href="/portfolio"
               className="inline-block bg-blue-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 transition duration-300"
             >
-              View My Work
+              View My Work  
             </a>
+           
           </div>
         </div>
       </div>

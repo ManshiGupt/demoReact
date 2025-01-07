@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-6">
       <div className="container mx-auto text-center">
         {/* Logo or Brand Name */}
-        <h1 className="text-2xl font-bold mb-4">Artist Portfolio</h1>
+        <h1 className="text-2xl font-bold mb-4">Ashwini Gupta</h1>
 
         {/* Social Media Links */}
         <div className="flex justify-center gap-6 mb-4">
@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-gray-400 text-sm">
-          © {new Date().getFullYear()} Artist Portfolio. All rights reserved.
+         Copyright © {new Date().getFullYear()} ASHWINI
         </p>
       </div>
     </footer>
