@@ -99,29 +99,75 @@
 // export default App
 
 // App.js
-import React from "react";
-import { useTheme } from "./components/Context";
-import Comp2 from "./components/Comp2";
+// import React from "react";
+// import { useTheme } from "./components/Context";
+// import Comp2 from "./components/Comp2";
 
-const App = () => {
-  const { theme } = useTheme();
+// const App = () => {
+//   const { theme } = useTheme();
 
+//   return (
+//     <div
+//       style={{
+//         height: "100vh",
+//         display: "flex",
+//         flexDirection: "column",
+//         alignItems: "center",
+//         justifyContent: "center",
+//         background: theme === "light" ? "#f9f9f9" : "#333",
+//         color: theme === "light" ? "#000" : "#fff",
+//       }}
+//     >
+//       <h1>{theme === "light" ? "Light Theme" : "Dark Theme"}</h1>
+//       <Comp2 />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+
+// import React from 'react'
+// import Navbar from './components/Navbar'
+// import Cards from './components/Cards'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Navbar/>
+//       <Cards/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Contact from './components/Contact';
+import Cards from './components/Cards';
+
+
+
+function App() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        background: theme === "light" ? "#f9f9f9" : "#333",
-        color: theme === "light" ? "#000" : "#fff",
-      }}
-    >
-      <h1>{theme === "light" ? "Light Theme" : "Dark Theme"}</h1>
-      <Comp2 />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Cards />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
